@@ -15,7 +15,7 @@
 --     union all
 --     select null as id
 
-)
+-- )
 
 select *
 from TASTY_BYTES_SAMPLE_DATA.RAW_POS.MENU
