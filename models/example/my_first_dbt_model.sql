@@ -7,18 +7,18 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+-- {{ config(materialized='table') }}
 
-with source_data as (
+-- with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
+--     select 1 as id
+--     union all
+--     select null as id
 
-)
+-- )
 
 select *
-from source_data
+from TASTY_BYTES_SAMPLE_DATA.RAW_POS.MENU
 
 /*
     Uncomment the line below to remove records with null `id` values
